@@ -1,0 +1,53 @@
+.w-full
+{
+    width: 100%;
+    max-width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+.card-container
+{
+    cursor: pointer;
+}
+.container
+{
+    width: 75% ;
+    margin:  auto;
+    padding: 32px;
+}
+.all-products
+{
+    margin-top: 40px;
+    display: grid;
+    column-gap: 16px;
+    row-gap: 32px;
+    align-items: center;
+    grid-template-columns: repeat(4,auto);
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+@media(max-width: 992px)
+{
+    .all-products
+    {
+    grid-template-columns: repeat(2,auto);
+    } 
+    .container
+    {
+        width: 100%;
+    }
+}
+.rating-container
+{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.price
+{
+    color: #218661;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 5px 0px;
+    transition: all 0.3s ease;
+}

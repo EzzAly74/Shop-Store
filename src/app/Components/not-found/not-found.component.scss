@@ -1,0 +1,72 @@
+/* Background gradient for a soft and calm feel */
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #7f7fd5, #86a8e7, #91c8c3); /* Smooth gradient */
+    color: #f8f8f8;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .not-found-card {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly translucent card */
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    animation: fadeIn 1s ease-out; /* Animation for smooth entry */
+  }
+  
+  .not-found-content h1 {
+    font-size: 72px;
+    margin: 0;
+    color: #f4c724; /* Warm golden color for header */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .not-found-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #6c6c6c; /* Softer grey text */
+    margin: 10px 0;
+  }
+  
+  .not-found-content ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 20px 0;
+    color: #888;
+  }
+  
+  .not-found-content ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .p-button {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #5e7fae; /* Calming blue button */
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .p-button:hover {
+    background-color: #4177a0;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Smooth fade-in animation */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  

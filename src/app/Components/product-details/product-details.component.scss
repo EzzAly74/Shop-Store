@@ -1,0 +1,62 @@
+/* For the Product Panel */
+.product-image {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    align-self: center;
+  }
+  
+  .product-image:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  
+  h1 {
+    font-size: 2rem;
+    color: #999;
+    margin-top: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  /* Description */
+  p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 1rem;
+    text-align: justify;
+  }
+  
+  /* Category Styling */
+  span {
+    background-color: transparent;
+    border:  1px solid #3f51b5;
+    color: #3f51b5;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .container
+  {
+    width: 75%;
+    margin: auto;
+    padding: 32px;
+  }
+  .product-info
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }

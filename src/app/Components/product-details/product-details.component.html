@@ -1,0 +1,17 @@
+<div *ngIf="productDetails !== null" class="container">
+  <p-panel header="Details" [toggleable]="true">
+    <div class="product-info">
+      <img
+        class="product-image"
+        [src]="productDetails.image"
+        alt="Product Image"
+      />
+
+      <h1>{{ productDetails.title }}</h1>
+
+      <p>{{ productDetails.description }}</p>
+
+      <span>{{ productDetails.category }}</span>
+    </div>
+  </p-panel>
+</div>

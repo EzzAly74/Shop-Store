@@ -1,0 +1,32 @@
+<div class="container">
+  <p-dropdown
+    [options]="shownNumberOfItems"
+    [(ngModel)]="itemsPerPage"
+    placeholder="Show ..."
+    (onChange)="getPoducts()"
+  />
+  <div class="all-products">
+    <div
+      class="card-container"
+      *ngFor="let product of products"
+      (click)="getProductDetails(product.id)"
+    >
+      <p-card>
+        <ng-template #header>
+          <img alt="Card" class="w-full" [src]="product.image" />
+        </ng-template>
+        <ng-template #title> {{ getSubTitle(product.title) }} </ng-template>
+        <ng-template #subtitle>
+          <span class="price">${{ product.price }}</span>
+        </ng-template>
+        <div class="card rating-container">
+          <p-rating
+            [(ngModel)]="product.rating.fixedRate"
+            readonly="true"
+          ></p-rating>
+          <span class="p-card-subtitle">({{ product.rating.count }})</span>
+        </div>
+      </p-card>
+    </div>
+  </div>
+</div>
